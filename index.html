@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Boda - ¡Estás Invitado!</title>
+    <style>
+        /* Estilos Generales - Papel Beige y Letras Negras */
+        body {
+            font-family: 'Playfair Display', 'Georgia', serif;
+            background-color: #fcf9f2; /* Tono papel beige cálido de alta gama */
+            /* Textura de grano fino simulada con CSS */
+            background-image: radial-gradient(rgba(0,0,0,0.03) 1px, transparent 0), radial-gradient(rgba(0,0,0,0.02) 1px, transparent 0);
+            background-size: 4px 4px;
+            background-position: 0 0, 2px 2px;
+            color: #111111; /* Letras color negro elegante */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background-color: #fcf9f2;
+            border: 1px solid #111111; /* Marco exterior negro */
+            padding: 50px 35px;
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+            box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.06);
+            position: relative;
+            margin: 20px auto;
+        }
+
+        /* Línea interior fina de acento en bronce/dorado viejo, típica de tarjetería fina */
+        .card::before {
+            content: "";
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            border: 1px solid #c5a880; 
+            pointer-events: none;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #111111;
+            margin-bottom: 5px;
+            font-weight: normal;
+        }
+
+        .subtitle {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #555555;
+            margin-bottom: 40px;
+        }
+
+        .details {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #222222;
+        }
+
+        .date-time {
+            font-size: 1.4rem;
+            border-top: 1px solid #111111;
+            border-bottom: 1px solid #111111;
+            padding: 18px 0;
+            margin: 30px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .dress-code {
+            background-color: #faf5ec; /* Ligera variación de fondo beige para destacar */
+            padding: 20px;
+            margin: 30px 0;
+            border: 1px dashed #c5a880; /* Borde discontinuo elegante */
+        }
+
+        .dress-code h3 {
+            margin: 0 0 8px 0;
+            font-size: 1rem;
+            letter-spacing: 2px;
+            color: #111111;
+        }
+
+        .dress-code p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: #444444;
+            font-style: italic;
+        }
+
+        /* Botones Interactivos Adaptados al Estilo Monocromático de Alta Etiqueta */
+        .btn {
+            display: block;
+            background-color: #111111; /* Botón principal negro */
+            color: #fcf9f2; /* Letras beige */
+            border: 1px solid #111111;
+            padding: 14px 20px;
+            margin: 15px 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            z-index: 2;
+        }
+
+        .btn:hover {
+            background-color: transparent;
+            color: #111111;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-maps {
+            background-color: transparent;
+            color: #111111;
+            border-color: #111111;
+        }
+
+        .btn-maps:hover {
+            background-color: #111111;
+            color: #fcf9f2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <p style="letter-spacing: 6px; color: #666666; font-size: 0.8rem;">SAVE THE DATE</p>
+        
+        <h1>JAZMINE & NESTOR</h1>
+        <div class="subtitle">¡Nos casamos!</div>
+
+        <div class="details" style="font-style: italic;">
+            Hay momentos que son inolvidables, y compartirlo con quienes más amamos los hace perfectos. Tenemos el honor de invitarte a nuestra boda.
+        </div>
+
+        <div class="date-time">
+            <strong>16 DE JULIO</strong><br>
+            <span style="font-size: 1.1rem; font-weight: normal; letter-spacing: 1px; text-transform: none; display: block; margin-top: 5px; color: #444444;">Hora: 2:30 PM</span>
+        </div>
+
+        <div class="details">
+            <strong style="text-transform: uppercase; letter-spacing: 1px; font-size: 0.95rem;">Lugar:</strong><br>
+            Casa Hacienda La Milagrosa<br>
+            <span style="font-size: 0.95rem; color: #555555;">Alameda Mamacona 700, Lurín 15841, Perú</span>
+        </div>
+
+        <!-- Botón Interactivo: Abrir Mapa -->
+        <a href="https://maps.app.goo.gl/4jcQgDQVQRdX8N2XA" target="_blank" class="btn btn-maps">📍 Ver Ubicación en Maps</a>
+
+        <div class="dress-code">
+            <h3>CÓDIGO DE VESTIMENTA</h3>
+            <p>Black Tie (Etiqueta: Esmoquin y Vestido Largo)</p>
+        </div>
+
+        <p style="font-size: 0.9rem; margin-bottom: 25px; color: #555555; font-style: italic;">Por favor, confímanos tu asistencia antes del 15 de junio.</p>
+
+        <!-- Botón Interactivo: Confirmar por WhatsApp -->
+        <a href="https://wa.me/0051987547772?text=¡Hola!%20Confirmo%20mi%20asistencia%20a%20la%20boda%20del%2016%20de%20julio.%20¡Qué%20ilusión!" target="_blank" class="btn">✉️ Confirmar Asistencia</a>
+    </div>
+
+</body>
+</html>
